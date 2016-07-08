@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.raphael.projeto_tcc.MainActivity">
+
+
+    <item android:id="@+id/linhas"
+        android:title="Linhas"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/salvaLocal"
+        android:title="Salvar Locais"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/listaLocal"
+        android:title="Lista de O/D"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+</menu>

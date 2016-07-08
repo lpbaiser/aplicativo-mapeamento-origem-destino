@@ -1,0 +1,12 @@
+<resources>
+
+    <string-array
+        name="meiotrans">
+      <item>@string/caminhando</item>
+      <item>@string/bicicleta</item>
+      <item>@string/moto</item>
+      <item>@string/metro</item>
+      <item>@string/taxi</item>
+      <item>@string/carro</item>
+    </string-array>
+</resources>

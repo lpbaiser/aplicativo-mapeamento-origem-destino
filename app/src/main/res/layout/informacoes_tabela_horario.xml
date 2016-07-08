@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90beeb"
+    tools:context=".tabelaHorario.InformacoesTabelaHorarioActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@android:id/list"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            tools:listitem="@android:layout/simple_expandable_list_item_1"
+            android:touchscreenBlocksFocus="true"
+            android:layoutMode="clipBounds"
+            android:listSelector="#847a7a"
+            android:layout_marginBottom="@dimen/abc_action_bar_overflow_padding_start_material"
+            style="@style/Base.AlertDialog.AppCompat"
+            android:choiceMode="multipleChoice"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

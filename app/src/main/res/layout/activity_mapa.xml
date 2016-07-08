@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#90beeb"
+    tools:context=".MapsActivity">
+
+    <EditText
+        android:id="@+id/edLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+
+    <EditText
+        android:id="@+id/edLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1    "/>
+
+    <EditText
+        android:id="@+id/edLatitudeDestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+
+    <EditText
+        android:id="@+id/edLongitudeDestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1    "/>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+
+
+        <EditText
+            android:id="@+id/origin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:hint="Informe sua origem ou clique em &quot;Meu Local&quot;"/>
+
+        <Button
+            android:id="@+id/btLocalizar"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:text="Meu Local"
+            android:textStyle="normal"
+            android:typeface="normal"
+            android:nestedScrollingEnabled="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+
+        <EditText
+            android:id="@+id/destination"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:hint="Informe seu destino e depois em &quot;Ok&quot;"
+            android:layout_weight="0.21" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:onClick="getRouteByGMAV2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+
+        <Button
+            android:id="@+id/buttonSalvarLocais"
+            android:layout_width="101dp"
+            android:layout_height="fill_parent"
+            android:text="Salvar Locais"
+            android:onClick="salvarOrigemDestino" />
+
+        <Button
+            android:id="@+id/buttonListarLocais"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Lista de locais"
+            android:onClick="getActivity" />
+
+        <Button
+            android:id="@+id/buttonLinhas"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:text="Linhas"
+            android:onClick="todaslinhas"
+            android:layout_alignLeft="@+id/buttonCheckOut"
+            android:layout_alignStart="@+id/buttonCheckOut" />
+
+    </LinearLayout>
+
+
+
+
+    <!--<Button-->
+        <!--android:id="@+id/buttonSalvarLocais"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="O/D Socket"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:onClick="socketEnviarDados" />-->
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/fragment"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#90beeb"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/infowindow_imageview_imagem"
+        android:gravity="center"
+        android:layout_alignTop="@+id/infowindow_imageview_imagem"
+        android:id="@+id/linearLayout">
+
+        <RadioGroup
+            android:id="@+id/embDes"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EMBARQUE"
+                android:id="@+id/checkEmbarque"
+                android:checked="false"
+                android:layout_below="@+id/linearLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="53dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DESEMBARQUE"
+                android:id="@+id/checkDesembarque"
+                android:checked="false"
+                android:layout_alignTop="@+id/checkEmbarque"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RadioGroup>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="Até o ponto irei??"
+                android:layout_below="@+id/txtEmbarqueDesembarque"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#050505" />
+
+
+            <RadioGroup android:id="@+id/meioTransporte">
+                <RadioButton
+                    android:drawableRight = "@drawable/bike"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:checked = "false"
+                    android:id = "@+id/checkBike" />
+
+                <RadioButton
+                    android:drawableRight = "@drawable/caminhando"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:checked = "false"
+                    android:id = "@+id/radioCaminhando" />
+
+                <RadioButton
+                    android:drawableRight = "@drawable/moto"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:checked = "false"
+                    android:id = "@+id/radioMoto"
+                     />
+
+                    <RadioButton
+                        android:drawableRight = "@drawable/metro"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:checked = "false"
+                        android:id = "@+id/radioMetro"
+                       />
+                    <RadioButton
+                        android:drawableRight = "@drawable/carro"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:checked = "false"
+                        android:id = "@+id/radioCarro"
+                        />
+
+                    <RadioButton
+                        android:drawableRight = "@drawable/taxi"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:checked = "false"
+                        android:id = "@+id/radioTaxi" />
+                </RadioGroup>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableRow>
+
+
+        </TableLayout>
+        <Button
+            android:layout_width="412dp"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:onClick="enviarDadosSocket"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+
+</LinearLayout>

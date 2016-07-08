@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#90beeb"
+    tools:context=".MapsActivity">
+
+    <EditText
+        android:id="@+id/edLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.73"
+        android:ems="10"/>
+
+
+
+    <EditText
+        android:id="@+id/edLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/origin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:hint="Informe sua origem ou clique em &quot;Meu Local&quot;"/>
+
+        <Button
+            android:id="@+id/btLocalizar"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:text="Meu Local"
+            android:onClick="getLocation"
+            android:textStyle="normal"
+            android:typeface="normal"
+            android:nestedScrollingEnabled="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+
+
+        <EditText
+            android:id="@+id/destination"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Informe seu destino e depois em &quot;Ok&quot;" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:onClick="getRouteByGMAV2" />
+
+        <Button
+            android:id="@+id/buttonLinhas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Linhas"
+            android:onClick="todaslinhas"
+            android:layout_alignLeft="@+id/buttonCheckOut"
+            android:layout_alignStart="@+id/buttonCheckOut"
+            android:longClickable="true" />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/button33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista de Origem/Destino"
+        android:onClick="getActivity" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:layout_gravity="right"
+        android:onClick="salvarOrigemDestino" />
+
+
+</LinearLayout>

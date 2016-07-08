@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Pesquisa Origem e Destino</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="app_id">1099998870059691</string>
+
+  <!--  <string name="facebook_app_id ">1203903482957007</string>-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Lat">lat</string>
+    <string name="Lon">lon</string>
+    <string name="HORA">HORA</string>
+    <string name="NUM" >NUM</string>
+    <string name="PONTO" >PONTO</string>
+
+  <string name="host_port_hint" >host_port_hint</string>
+  <string name="host_port_label" >host</string>
+  <string name="host_port_send" >host_port_send</string>
+  <string name="btn_send">Enviar Dados</string>
+
+    <string name="CATEGORIA_SERVICO" >CATEGORIA_SERVICO</string>
+    <string name="mensagem" >mensagem</string>
+    <string name="COD" >COD</string>
+    <string name="SOMENTE_CARTAO" >SOMENTE_CARTAO</string>
+    <string name="NOME" >NOME</string>
+    <string name="title_activity_maps_activity_teste">Map</string>
+    <string name="title_activity_activity_list_view">activity_listView</string>
+    <string name="title_activity_embarque_desembarque">EmbarqueDesembarque</string>
+
+
+  <string name="simple_direction">Walking Direction</string>
+  <string name="transit_direction">Transit Direction</string>
+  <string name="alternative_direction">Transit Alternative Direction</string>
+  <string name="request_direction">Request Direction</string>
+
+  <string-array name="checkIn_checkOut">
+    <item>Embarque</item>
+    <item>Desembarque</item>
+    </string-array>
+
+
+
+    <string
+        name="caminhando">Caminhando</string>
+    <string
+        name="bicicleta">Bicicleta</string>
+    <string
+        name="moto">Moto</string>
+    <string
+        name="metro">Metrô</string>
+    <string
+        name="taxi">Taxi</string>
+    <string
+        name="carro">Carro</string>
+</resources>

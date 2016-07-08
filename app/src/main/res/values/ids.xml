@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fragment_mapa" type="id" />
+    <item name="destination" type="id" />
+    <item name="origin" type="id" />
+    <item name="edLatitude" type="id" />
+    <item name="edLongitude" type="id" />
+    <item name="LinhasActivity" type="id" />
+    <item name="txtPREFIXO" type="id" />
+    <item name="txtLAT_BUS" type="id" />
+    <item name="txtHORA_ONIBUS" type="id" />
+
+</resources>
